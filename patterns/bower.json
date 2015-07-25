@@ -1,0 +1,27 @@
+{
+  "name": "##project",
+  "version": "1.0.0",
+  "authors": [
+    "orv"
+  ],
+  "description": "##project",
+  "keywords": [
+    "##project"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "bootstrapValidator": "~0.5.3",
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "underscore": "~1.8.3",
+    "angular-ui-router-styles": "~0.0.5"
+  }
+}

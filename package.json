@@ -1,0 +1,29 @@
+{
+  "name": "orv.manager-angularjs",
+  "version": "1.0.10",
+  "description": "An angularJs manager by orv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AngularJs",
+    "Manager"
+  ],
+  "author": {
+    "name": "ORV"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^0.8.5",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:omarios90/orv.manager-angularjs.git"
+  },
+  "_id": "orv.manager-angularjs@1.0.5",
+  "_shasum": "35e80d0528345367be6f4b00fc9f0f4157722e82",
+  "_from": "orv.manager-angularjs@>=1.0.5 <2.0.0"
+}
