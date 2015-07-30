@@ -40,6 +40,8 @@ module.exports = function(grunt) {
     var modules = grunt.config.data.properties.modules;
     var name;
 
+    makeResource('base');
+
     for (var i = 0; i < modules.length; i++) {
         name = modules[i];
 
@@ -55,10 +57,8 @@ module.exports = function(grunt) {
         };
 
         makeResource(name);
-        
-    }
 
-    makeResource('base');
+    }
 
     function makeResource(name) {
         // CSS
@@ -101,10 +101,14 @@ module.exports = function(grunt) {
             ],
             dest: '<%= properties.dest.dev %>/' + name + '/services.js'
         };
+        // Adding libraries
+        // -----------------------------------------------
+        result.librariesJs.src.push('<%= properties.res.base %>/' + name + '/libraries/*.js')
+        result.librariesCss.src.push('<%= properties.res.base %>/' + name + '/libraries/*.css')
     }
 
     grunt.config('concat', result);
 
     grunt.loadNpmTasks('grunt-contrib-concat');
-    
+
 };

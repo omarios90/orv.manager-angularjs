@@ -333,6 +333,7 @@ var AngularJS = {
 				utils.createFolder(res[i].path, fn_init, res[i]);
 			}
 			utils.createFolder(base + 'templates/', fn_style, base);
+			utils.createFolder(base + 'libraries/', fn_style, base);
 
 			// Functions
 			function fn_init(resource) {
