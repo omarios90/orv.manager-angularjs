@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: '<%= properties.libs.base %>/bootstrap/fonts/',
                 src: ['*'],
-                dest: '<%= properties.dest.base %>/build/fonts/',
+                dest: '<%= properties.dest.base %>/fonts/',
                 filter: 'isFile'
             }]
         }
