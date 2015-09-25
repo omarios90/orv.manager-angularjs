@@ -20,7 +20,8 @@ module.exports = {
 	},
 	// Function to update file using another template to fill
 	updateFileWithTemplate: function (source, dest, templateFile, file, values, callback) {
-		basic.readFile(constants.paths.temp + templateFile, function (data) {
+		var filePath = basic.path.normalize(__dirname + '/../' + constants.paths.temp + templateFile);
+		basic.readFile(filePath, function (data) {
 			for (var key in values) {
 				if (values.hasOwnProperty(key)) {
 					var regex = new RegExp('##' + key, 'g');

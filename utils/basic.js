@@ -1,3 +1,5 @@
+var constants = require('./constants')();
+
 module.exports = {
 	// Dependencies
 	fs: require('fs'),
@@ -21,10 +23,11 @@ module.exports = {
 	},
 	// Function to update files
 	updateFile: function (source, dest, file, value) {
-		this.basic.readFile(source, function (data) {
-			if (data.indexOf(this.constants.vars.updatePhrase) > 0) {
-				data = data.replace(this.constants.vars.updatePhrase, value + this.constants.vars.updatePhrase);
-				this.basic.createFile(dest + file, data);
+		var that = this;
+		this.readFile(source, function (data) {
+			if (data.indexOf(constants.vars.updatePhrase) > 0) {
+				data = data.replace(constants.vars.updatePhrase, value + constants.vars.updatePhrase);
+				that.createFile(dest + file, data);
 			}
 		});
 	},

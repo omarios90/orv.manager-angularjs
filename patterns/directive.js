@@ -7,7 +7,7 @@ angular
             compile: function(element, attr) {
 
                 return {
-                    pre: function(scope, element, attr, controller) {}
+                    pre: function(scope, element, attr, controller) {},
                     post: function(scope, element, attr, controller) {}
                 }
 
