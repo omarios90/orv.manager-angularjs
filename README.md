@@ -18,9 +18,20 @@ Also you can create these, but they require that you specify a existing module b
 
 ## How to use it?
 - Install this package via node:
-`npm install orv.manager-angularjs --save`
-- Copy "node_modules/orv.manager-angularjs/**angularjs.js**" javascript file to the same level of the node_modules.
-- Customize the variables inside the *angularjs.js* file:
+`npm install -g orv.manager-angularjs`
+- Write the following json file with name "**orv.json**":
+```
+{
+	"angularjs": {
+		"project": "demo",
+		"paths": {
+			"build": "build",
+			"index": "www"
+		}
+	}
+}
+```
+- Customize the variables inside the *orv.json* file:
   - *project*: name of your project
   - *build*: path where grunt will generate your minified versions of javascript and css
   - *index*: path where will be exported your *index.html* file.
