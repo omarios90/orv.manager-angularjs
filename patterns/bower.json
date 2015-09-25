@@ -18,10 +18,8 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "bootstrapValidator": "~0.5.3",
     "angular": "~1.4.0",
     "angular-ui-router": "~0.2.15",
-    "underscore": "~1.8.3",
-    "angular-ui-router-styles": "~0.0.5"
+    "underscore": "~1.8.3"
   }
 }
