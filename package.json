@@ -1,6 +1,6 @@
 {
   "name": "orv.manager-angularjs",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "An angularJs manager by orv",
   "main": "main.js",
   "scripts": {
