@@ -24,9 +24,6 @@
     "type": "git",
     "url": "git@gitlab.com:omarios90/orv.manager-angularjs.git"
   },
-  "bin": {
-    "orv-angularjs": "bin/orv"
-  },
   "_id": "orv.manager-angularjs@1.0.5",
   "_shasum": "35e80d0528345367be6f4b00fc9f0f4157722e82",
   "_from": "orv.manager-angularjs@>=1.0.5 <2.0.0"
