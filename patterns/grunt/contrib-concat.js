@@ -12,15 +12,13 @@ module.exports = function(grunt) {
                 '<%= properties.libs.base %>/angular/angular.js',
                 '<%= properties.libs.base %>/underscore/underscore.js',
                 '<%= properties.libs.base %>/angular-ui-router/release/angular-ui-router.js',
-                '<%= properties.libs.base %>/bootstrap/dist/js/bootstrap.js',
-                '<%= properties.libs.base %>/bootstrapValidator/dist/js/bootstrapValidator.js'
+                '<%= properties.libs.base %>/bootstrap/dist/js/bootstrap.js'
             ],
             dest: '<%= properties.dest.dev %>/libraries.js'
         },
         librariesCss: {
             src: [
-                '<%= properties.libs.base %>/bootstrap/dist/css/bootstrap.min.css',
-                '<%= properties.libs.base %>/bootstrapValidator/dist/css/bootstrapValidator.min.css'
+                '<%= properties.libs.base %>/bootstrap/dist/css/bootstrap.min.css'
             ],
             dest: '<%= properties.dest.dev %>/libraries.css'
         },
@@ -77,6 +75,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             src: [
+                '<%= properties.res.base %>/' + name + '/controllers/_init.js',
                 '<%= properties.res.base %>/' + name + '/controllers/*.js'
             ],
             dest: '<%= properties.dest.dev %>/' + name + '/controllers.js'
@@ -86,7 +85,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             src: [
-                '<%= properties.res.base %>/' + name + '/directives/*.js',
+                '<%= properties.res.base %>/' + name + '/directives/_init.js',
                 '<%= properties.res.base %>/' + name + '/directives/**/*.js'
             ],
             dest: '<%= properties.dest.dev %>/' + name + '/directives.js'
@@ -96,7 +95,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             src: [
-                '<%= properties.res.base %>/' + name + '/services/*.js',
+                '<%= properties.res.base %>/' + name + '/services/_init.js',
                 '<%= properties.res.base %>/' + name + '/services/**/*.js'
             ],
             dest: '<%= properties.dest.dev %>/' + name + '/services.js'

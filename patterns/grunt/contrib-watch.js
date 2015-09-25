@@ -37,6 +37,8 @@ module.exports = function(grunt) {
 
     };
 
+    commonWatch('base');
+
     function commonWatch(name) {
         result[name + 'Css'] = {
             files: [

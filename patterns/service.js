@@ -1,6 +1,6 @@
 angular
     .module('##moduleServices')
-    .service('##nameService', ['$scope',
+    .service('##nameService', ['$rootScope',
         function($rootScope) {
 
 

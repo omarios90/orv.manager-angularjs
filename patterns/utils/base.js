@@ -6,8 +6,8 @@
  */
 angular
     .module('utils')
-    .service('Base', ['$rootScope', '$state', '$stateParams', '$location', '$sce', 'Post', 'Cookie',
-        function ($rootScope, $state, $stateParams, $location, $sce, Post, Cookie) {
+    .service('Base', ['$rootScope', '$state', '$stateParams', '$location', '$sce', 'Request', 'Cookie',
+        function ($rootScope, $state, $stateParams, $location, $sce, Request, Cookie) {
 
             this.init = function () {
 
@@ -46,7 +46,7 @@ angular
                     return $sce.trustAsHtml(html);
                 };
 
-            }
+            };
 
         }
     ]);
