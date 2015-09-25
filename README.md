@@ -18,7 +18,9 @@ Also you can create these, but they require that you specify a existing module b
 
 ## How to use it?
 - Install this package via node:
-`npm install -g orv.manager-angularjs`
+`npm install orv.manager-angularjs`
+- Install the Cli for this package:
+`npm install -g orv.manager-angularjs-cli`
 - Write the following json file with name "**orv.json**":
 ```
 {
@@ -35,6 +37,7 @@ Also you can create these, but they require that you specify a existing module b
   - *project*: name of your project
   - *build*: path where grunt will generate your minified versions of javascript and css
   - *index*: path where will be exported your *index.html* file.
+- Run **orv-angularjs-cli** and voilà.
 
 ## How do I get my minified files?
 After you have created your first module you have to run:
