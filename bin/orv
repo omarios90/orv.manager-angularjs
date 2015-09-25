@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var orv_angularjs = require('orv.manager-angularjs');
+
+var config = JSON.parse(fs.readFileSync('./orv.json', 'utf8'));
+
+orv_angularjs.start(config.angularjs);
