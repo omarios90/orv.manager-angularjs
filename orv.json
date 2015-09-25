@@ -1,0 +1,9 @@
+{
+	"angularjs": {
+		"project": "demo",
+		"paths": {
+			"build": "build",
+			"index": "www"
+		}
+	}
+}
